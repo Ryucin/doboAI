@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIVIL-AI | 土木職のためのAI学習コミュニティ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #0056b3;
+        }
+        header nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 25px;
+        }
+        header nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 86, 179, 0.7)), url('https://via.placeholder.com/1500x600.png?text=AI+x+Civil+Engineering');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff9800;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #e68900;
+        }
+        section {
+            padding: 60px 0;
+        }
+        section h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #0056b3;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: calc(33% - 40px);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        #about ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        #about ul li {
+            background: url('https://via.placeholder.com/20x20.png?text=✔') no-repeat left center;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+        #pricing .card {
+            border-top: 5px solid #0056b3;
+        }
+        #cta {
+            background: #0056b3;
+            color: #fff;
+            text-align: center;
+        }
+        #cta h3 {
+            color: #fff;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+            header nav ul {
+                margin-top: 15px;
+            }
+            header nav ul li {
+                margin: 0 10px;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+            .card {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 500px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>CIVIL-AI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">コミュニティについて</a></li>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#pricing">料金プラン</a></li>
+                    <li><a href="#cta">参加する</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>未来の土木を、AIと共に創る。</h2>
+            <p>現場の課題をAIで解決する実践的スキルが身につく、日本初の土木技術者特化型AI学習コミュニティ</p>
+            <a href="#cta" class="btn">今すぐコミュニティに参加する</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h3>CIVIL-AIとは？</h3>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px auto;">
+                CIVIL-AIは、多忙な土木技術者の皆さまが、AI技術を基礎から学び、実務に活かすためのオンラインコミュニティです。<br>
+                「AIに興味はあるけど、何から学べばいいか分からない」「一緒に学ぶ仲間がほしい」そんなあなたのための場所です。
+            </p>
+            <ul>
+                <li>AIによるデータ分析で、施工計画や維持管理を高度化</li>
+                <li>画像認識技術で、点検・調査業務を自動化・効率化</li>
+                <li>需要予測モデルで、最適な資材調達・人員配置を実現</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="features" style="background-color: #fff;">
+        <div class="container">
+            <h3>コミュニティの3つの特徴</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h4>1. 土木分野に特化</h4>
+                    <p>土木工学の知識を前提とした、専門性の高い学習コンテンツ。明日から現場で使える実践的なAI活用法を学べます。</p>
+                </div>
+                <div class="card">
+                    <h4>2. 初心者でも安心</h4>
+                    <p>プログラミング未経験者でも大丈夫。Pythonの基礎からAIモデルの構築まで、段階的にスキルアップできます。</p>
+                </div>
+                <div class="card">
+                    <h4>3. 仲間と繋がる</h4>
+                    <p>同じ志を持つ全国の土木技術者と交流し、知識や悩みを共有。モチベーションを維持しながら学習を続けられます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h3>料金プラン</h3>
+            <div class="card-container">
+                <div class="card">
+                    <h4>月額プラン</h4>
+                    <p style="font-size: 2rem; font-weight: bold; color: #0056b3;">¥9,800 <span style="font-size: 1rem; color: #333;">/ 月</span></p>
+                    <ul>
+                        <li>全ビデオコンテンツ見放題</li>
+                        <li>オンライン勉強会（月2回）</li>
+                        <li>メンバー限定チャット参加</li>
+                    </ul>
+                    <a href="#" class="btn" style="background-color: #0056b3; margin-top: 20px;">このプランで始める</a>
+                </div>
+                <div class="card">
+                    <h4>年額プラン</h4>
+                    <p style="font-size: 2rem; font-weight: bold; color: #0056b3;">¥98,000 <span style="font-size: 1rem; color: #333;">/ 年</span></p>
+                    <p style="color: #ff9800; font-weight: bold;">2ヶ月分お得！</p>
+                    <ul>
+                        <li>全ビデオコンテンツ見放題</li>
+                        <li>オンライン勉強会（月2回）</li>
+                        <li>メンバー限定チャット参加</li>
+                        <li>個別メンタリング（年2回）</li>
+                    </ul>
+                    <a href="#" class="btn" style="background-color: #0056b3; margin-top: 20px;">このプランで始める</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container">
+            <h3>さあ、あなたもAIでキャリアを加速させませんか？</h3>
+            <p>まずは無料説明会にご参加ください。コミュニティの詳細や学習内容について詳しくご説明します。</p>
+            <a href="#" class="btn">無料説明会に申し込む</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CIVIL-AI Community. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
